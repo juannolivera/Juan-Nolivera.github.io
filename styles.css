@@ -1,0 +1,95 @@
+/* Estilo general para el body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Cambio para alinear desde la parte superior */
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Para evitar el desbordamiento */
+}
+
+/* Contenedor principal del glosario */
+.glossary {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-height: 90vh;  /* Ajustamos para que no se sobrepase de la altura de la ventana */
+    overflow-y: auto;  /* Agregar desplazamiento vertical si el contenido es grande */
+}
+
+/* Título principal */
+h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* Estilo de cada palabra */
+.word {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Palabra en inglés */
+.english-word {
+    font-size: 24px;
+    font-weight: bold;
+    width: 150px;  /* Aseguramos que todas las palabras tengan el mismo ancho */
+    text-align: left;
+    white-space: nowrap;  /* Para evitar que las palabras se desborden */
+}
+
+/* Traducción */
+.translation {
+    font-size: 18px;
+    color: #555;
+    width: 200px; /* Aseguramos que las traducciones tengan un tamaño consistente */
+    text-align: left;
+    white-space: nowrap;  /* Para evitar que las traducciones se desborden */
+}
+
+/* Estilo de los botones */
+button {
+    padding: 5px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;  /* Espaciado entre el botón y las palabras/traducciones */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    transform: scale(0.95);
+    transition: transform 0.2s;
+}
+/* Estilo del mensaje de advertencia */
+.warning {
+    background-color: #4CAF50; /* Fondo amarillo */
+    color: #1f1d1d; /* Color de texto oscuro */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Espacio entre la advertencia y las palabras */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
